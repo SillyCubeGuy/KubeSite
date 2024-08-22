@@ -1,3 +1,29 @@
+@font-face {
+    font-family: k_fontbig;
+    src: url(KawaiiBubble-Regular.ttf);
+}
+
+
 html {
     background-color: lightgreen;
+}
+
+@keyframes starttext {
+    0% {
+        font-size: 0;
+    }
+    100% {
+        font-size: large;
+    }
+    
+}
+
+.sitestart {
+    font-family: k_fontbig;
+    text-align: center;
+    font-weight: bold;
+    color: green;
+    animation-name: starttext;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
 }
