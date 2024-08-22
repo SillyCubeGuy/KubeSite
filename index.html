@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://www.dafont.com/leafy-plant-sans.font">
+<script src="script.js"></script>
 <html>
+    <header class="top">
+    <a onclick="bgmcheck()"><img class="boingable" id="mbutton" src="Play.svg"></a>
+    <a onclick="lightcheck()"><img class="boingable" id="lbutton" src="light.svg"></a>
+    </header>
+    <audio autoplay id="bgm">
+        <source src="home.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio autoplay id="click">
+        <source src="snd_noise_ch1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
     <div class="sitestart">
-        SillyKubeGuy
+        <h1>SillyKubeGuy</h1>
     </div>
-
+    <div class="actualsite">
+    <div>
+    <h3>This is the place...!</h3>
+    </div>
+    </div>
 </html>

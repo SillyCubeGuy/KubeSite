@@ -1,0 +1,44 @@
+.barb {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    display: block;
+    scale: 0.6;
+    animation-name: float; 
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    opacity: 0%;
+}
+
+.starter {
+    animation-name: start; 
+}
+
+html {
+    background-image: url('sky.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    height: 100vh; /* Make sure body takes up full height */
+    margin: 0; /* Remove default margin */
+}
+
+@keyframes start {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes float {
+    0% {
+        margin-top: 10%;
+    }
+    100% {
+        margin-top: 11%;
+    }
+}

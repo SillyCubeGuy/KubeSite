@@ -1,3 +1,8 @@
+:root {
+    --nametextoffset: 5%;
+    --lightmode: lightgreen;
+}
+
 @font-face {
     font-family: k_fontbig;
     src: url(KawaiiBubble-Regular.ttf);
@@ -5,25 +10,73 @@
 
 
 html {
-    background-color: lightgreen;
+    background-color: var(--lightmode);
 }
 
 @keyframes starttext {
     0% {
         font-size: 0;
+        margin-top: 25%;
+        text-align: center;
+    }
+    50% {
+        font-size: xx-large;
+        scale: 1.5;
+        margin-top: 25%;
+        text-align: center;
     }
     100% {
-        font-size: large;
+        font-size: xx-large;
+        margin-top: var(--nametextoffset);
+        scale: 1.5;
     }
-    
+}
+
+@keyframes boing {
+    0% {
+        scale: 1.1;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes fadeinname {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.boingable {
+    animation-name: boing;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0, 0, 0, 1);
 }
 
 .sitestart {
     font-family: k_fontbig;
     text-align: center;
     font-weight: bold;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    scale: 1.5;
+    font-size: xx-large;
+    margin-top: var(--nametextoffset);
     color: green;
     animation-name: starttext;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-direction: normal;
+}
+
+.actualsite {
+    margin-top: 15%;
+}
+
+.top {
+    display: fixed;
 }
